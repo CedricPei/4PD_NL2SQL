@@ -34,6 +34,7 @@ langsmith==0.1.48
 MarkupSafe==2.1.5
 marshmallow==3.21.1
 mpmath==1.3.0
+modelscope
 multidict==6.0.5
 mypy-extensions==1.0.0
 networkx==3.3
@@ -47,6 +48,7 @@ PyYAML==6.0.1
 regex==2023.12.25
 requests==2.31.0
 safetensors==0.4.3
+sentence_transformers
 sniffio==1.3.1
 SQLAlchemy==2.0.29
 sympy==1.12
@@ -70,8 +72,5 @@ text-generation==0.6.1
 loguru==0.7.2
 pymysql==1.1.0
 cryptography==41.0.5
-clickhouse-sqlalchemy@https://nexus.4pd.io/repository/pypi-dev/packages/clickhouse-sqlalchemy/0.2.4/clickhouse-sqlalchemy-0.2.4.tar.gz
+clickhouse-sqlalchemy==0.3.1
 psycopg2-binary==2.9.9
-sentence-transformers==2.7.0
-tenacity==8.3.0
-thefuzz==0.22.1
