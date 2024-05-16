@@ -16,7 +16,7 @@ app = Flask(__name__)
 print("=============Starting service==============")
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_name", type=str, choices=[
-                    "gpt-3.5-turbo", "sqlcoder-7b-2", "deepseek-coder-33b-instruct", "modelhub-deepseek-coder-33b-instruct", "modelhub_qwen1_5_72b_chat"], default="sqlcoder-7b-2")
+                    "gpt-3.5-turbo", "sqlcoder-7b-2", "deepseek-coder-33b-instruct", "modelhub-deepseek-coder-33b-instruct", "modelhub_qwen1_5_72b_chat"], default="gpt-3.5-turbo")
 parser.add_argument("--method", type=str,
                     choices=["mac", "din"], default="mac")
 args = parser.parse_args()
@@ -25,7 +25,7 @@ method = args.method
 print(f"model_name: {model_name}")
 
 
-for_submit = True
+for_submit = False
 if for_submit:
     from nl2sql_hub.datasource import DataSource, get_url
     datasource_path = os.getenv("NL2SQL_DATASOURCE_PATH")
